@@ -1,0 +1,36 @@
+ <!-- Main Navigation-->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><img src="/Assets/images/icon-b.png" height="70em" viewBox="0 0 512 512" alt="YOYO"></a>
+      <!-- Hamburger -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+  <li class="nav-item<%= title === 'Home' || title === '/' ? ' active' : '' %>">
+    <a class="nav-link" aria-current="page" href="/home"><i class="fa-solid fa-house fa-xs"></i> Home </a>
+  </li>
+
+  <li class="nav-item<%= title === 'About' ? ' active' : '' %>">
+    <a class="nav-link" aria-current="page" href="/about"><i class="fa-solid fa-address-card fa-xs"></i> About Me </a>
+  </li>
+
+  <li class="nav-item<%= title === 'Projects' ? ' active' : '' %>">
+    <a class="nav-link" aria-current="page" href="/projects"><i class="fa-solid fa-folder fa-xs"></i> Projects </a>
+  </li>
+
+  <li class="nav-item<%= title === 'Services' ? ' active' : '' %>">
+    <a class="nav-link" aria-current="page" href="/services"><i class="fa-solid fa-screwdriver-wrench fa-xs"></i> Services </a>
+  </li>
+
+  <li class="nav-item<%= title === 'Contact' ? ' active' : '' %>">
+    <a class="nav-link" aria-current="page" href="/contact"><i class="fa-solid fa-message fa-xs"></i> Contact Me </a>
+  </li>
+</ul>
+
+
+
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,64 @@
+<%- include('partials/main_nav') %>
+
+
+<%- include('partials/header') %>
+
+ 
+  <!-- Main Content -->
+  <main class="container">
+    <div class="jumbotron">
+      <br class="my-4"></hr>
+      <h1 class="display-4"><%= title %></h1>
+      <p class="lead">Get assistance and schedule consultation. It’s simple.</p>
+      <hr class="my-4">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            
+            <p style="text-align: left;" class="display-6">Yohanna Ho</p>
+            <p style="text-align: left;">
+            <i class="fa-solid fa-envelope fa-sm"></i> yho45@my.centennialcollege.ca<br>
+            <i class="fa-solid fa-map-pin fa-lg"></i> ON M1G 3T8</p>
+            
+          
+          </div> 
+          <div class="col" style="text-align: left;">
+            <form action="/contact" method="post">
+              <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName">
+              </div>
+              <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName">
+              </div>
+              <div class="mb-3">
+                <label for="contactNumber" class="form-label">Contact Number</label>
+                <input type="tel" class="form-control" id="contactNumber">
+              </div>
+              <div class="mb-3">
+                <label for="emailAddress" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="emailAddress">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+              </div>
+              <div class="text-end">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <%- include('partials/bottom_nav') %>
+
+  <%- include('partials/footer') %>
+
+
+
