@@ -9,6 +9,24 @@ let usersRouter = require('./routes/users');
 
 let app = express();
 
+let mongoose = require('mongoose');
+
+// DB Configuration
+const LocalURI = 'mongodb://localhost:27017/DressStore';
+
+mongoose.connect(LocalURI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+mongoose.connection.on('connected', () => {
+  console.log('Connected to MongoDB');
+});
+
+mongoose.connection.on('error', (err) => {
+  console.error(`MongoDB connection error: ${err}`);
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
